@@ -15,7 +15,7 @@ ha_platforms:
 ha_integration_type: integration
 ---
 
-The Miele integration allows users to integrate their home appliances using the [official 3rd party API](https://www.miele.com/developer).
+The Miele integration allows users to integrate their home appliances using the [official 3rd party API](https://www.miele.com/developer). The integration will make the best effort to map the data-points in the API to sensors, switches etc in Home Assistant.
 
 ## Use cases
 
@@ -26,7 +26,7 @@ The Miele integration allows users to integrate their home appliances using the 
 - Adjust the appliance settings.
 
 {% note %}
-Note that it depends on the appliance which of the features are supported.
+Note that it depends on the appliance model which of the features that are supported.
 {% endnote %}
 
 ## Supported devices
@@ -36,7 +36,7 @@ You can find information about supported devices on the [Miele website](https://
 ## Prerequisites
 
 1. Visit [https://www.miele.com/developer](https://www.miele.com/f/com/en/register_api.aspx) and sign up for a developer account.
-2. Enter and arbitrary name for you connection and the email of your login for the original Miele app.
+2. Enter an arbitrary name for you connection and the email of your login for the original Miele app.
 3. On success, you will get an email with an activation link. Press the Activate button. Make note of the client ID and secret - you will need them for the next step.
 4. In Home Assistant, find the Miele integration and launch it. You will be prompted to create an [Application Credential](https://www.home-assistant.io/integrations/application_credentials). You will need to provide a name (it's arbitrary) in addition to the Client ID and Secret from the previous step. Then, follow the steps in the UI to complete setup.
 
