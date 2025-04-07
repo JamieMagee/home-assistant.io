@@ -15,7 +15,7 @@ ha_platforms:
 ha_integration_type: integration
 ---
 
-The Miele integration allows users to integrate their home appliances using the [official 3rd party API](https://www.miele.com/developer). The integration will make the best effort to map the data-points in the API to sensors, switches etc in Home Assistant.
+The Miele integration allows users to integrate their home appliances using the [official 3rd party API](https://www.miele.com/developer). The integration will make the best effort to map the data-points in the API to sensors, switches, etc. in Home Assistant.
 
 ## Use cases
 
@@ -26,7 +26,7 @@ The Miele integration allows users to integrate their home appliances using the 
 - Adjust the appliance settings.
 
 {% note %}
-Note that it depends on the appliance model which of the features that are supported.
+Note that the feature availability depends on the appliance model.
 {% endnote %}
 
 ## Supported devices
@@ -36,15 +36,15 @@ You can find information about supported devices on the [Miele website](https://
 ## Prerequisites
 
 1. Visit [https://www.miele.com/developer](https://www.miele.com/f/com/en/register_api.aspx) and sign up for a developer account.
-2. Enter an arbitrary name for you connection and the email of your login for the original Miele app.
+2. Enter an arbitrary name for your connection and the email of your login for the original Miele app.
 3. On success, you will get an email with an activation link. Press the Activate button. Make note of the client ID and secret - you will need them for the next step.
 4. In Home Assistant, find the Miele integration and launch it. You will be prompted to create an [Application Credential](https://www.home-assistant.io/integrations/application_credentials). You will need to provide a name (it's arbitrary) in addition to the Client ID and Secret from the previous step. Then, follow the steps in the UI to complete setup.
 
 {% important %}
 
-- The provided Miele User Account email address **must** be all lowercase; otherwise, it will result in authentication failures.
-- The password should not contain any special characters. Even though it works in the Miele app it may not work with the API.
-- Allow a couple of minutes to get the activation email. All changes in the developer portal take couple of minutes before the change is implemented.
+- The provided Miele User Account email address must be all lowercase; otherwise, it will result in authentication failures.
+- The password should not contain any special characters. Even though it works in the Miele app, it may not work with the API.
+- Allow a couple of minutes to get the activation email. All changes in the developer portal take a couple of minutes before the change is implemented.
 
 {% endimportant %}
 
@@ -57,7 +57,7 @@ instead.
 The `<HOME_ASSISTANT_URL>` must be the same as used during the configuration/
 authentication process.
 
-Internal examples: `http://192.168.0.2:8123/auth/external/callback`, `http://homeassistant.local:8123/auth/external/callback`."
+Internal examples: `http://192.168.0.2:8123/auth/external/callback`, `http://homeassistant.local:8123/auth/external/callback`.
 
 {% enddetails %}
 
@@ -79,7 +79,7 @@ The integration configuration will ask for the *Client ID* and *Client Secret* c
 
 - **Operation state**:
   - **Status**: Represents the current operation state of the device.
-  - **Availability**: All the appliances with programs
+  - **Availability**: Represents that current connection status for the device.
 {% enddetails %}
 
 ## Automation examples
