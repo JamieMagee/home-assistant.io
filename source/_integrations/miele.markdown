@@ -5,7 +5,7 @@ ha_category:
   - Hub
   - Sensor
 ha_iot_class: Cloud Push
-ha_release: '2025.5.0'
+ha_release: '2025.5'
 ha_domain: miele
 ha_codeowners:
   - '@astrandb'
@@ -15,7 +15,9 @@ ha_platforms:
 ha_integration_type: integration
 ---
 
-The Miele integration allows users to integrate their home appliances using the [official 3rd party API](https://www.miele.com/developer). The integration will make the best effort to map the data-points in the API to sensors, switches, etc. in Home Assistant.
+The Miele integration allows users to integrate their home appliances using the [official 3rd party API](https://www.miele.com/developer).
+
+Miele is known as a manufacturer of premium appliances for cooking, laundry care and floorcare.
 
 ## Use cases
 
@@ -110,7 +112,7 @@ actions:
 
 This integration uses server-sent events from the Miele API to receive live updates from the appliances.
 When the configuration entry is loaded or after a streaming error (for example after disconnection), the integration will request all data (such as appliance info, available commands, programs, settings, and status) for all appliances.
-If a new appliance is added to the account, the integration will request data for the new appliance and expose the related entities automatically after a reload of the integration.
+
 
 ## Known limitations
 
@@ -124,7 +126,6 @@ If a new appliance is added to the account, the integration will request data fo
 #### Symptom: "The entities related to an appliance were available but no longer are"
 
 After reloading the Miele integration, the entities related to an appliance that used to be available are no longer available.
-Also, when downloading the diagnostics data from the device page, the technical data is obtained:
 
 ##### Description
 
