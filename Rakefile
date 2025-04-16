@@ -113,3 +113,15 @@ task :version_data do
     file.write(JSON.generate(remote_data))
   end
 end
+
+
+desc "Download language scores from home-assistant.github.io/intents"
+task :version_data do
+  uri = URI('https://home-assistant.github.io/intents/language_scores.json')
+
+  remote_data = JSON.parse(Net::HTTP.get(uri))
+
+  File.open("#{source_dir}/_data/language_scores.json", "w") do |file|
+    file.write(JSON.generate(remote_data))
+  end
+end
