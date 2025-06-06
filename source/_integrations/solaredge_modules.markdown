@@ -71,7 +71,7 @@ days_to_show: 30
 ```
 ### SQL
 
-To identify problematic modules you could setup the [`SQL`](/integrations/sql/) integration with the following:
+To identify problematic modules, you could set up the [`SQL`](/integrations/sql/) integration with the following:
 
 Name: SolarEdge low production modules (East)
 
@@ -127,7 +127,7 @@ WHERE
 )
 ```
 
-This will result to a sensor with state e.g.: `SolarEdge 1.1.13 (95.7%), SolarEdge 1.1.14 (95.2%)`
+This will result in a sensor with state e.g.: `SolarEdge 1.1.13 (95.7%), SolarEdge 1.1.14 (95.2%)`
 You can use this sensor in automations, e.g to notify you if its value changes.
 
 ## Removing the integration
