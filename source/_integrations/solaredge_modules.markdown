@@ -25,7 +25,9 @@ The main use case is to track your solar production per module to identify any f
 
 ## Prerequisites
 
-To set up the integration, you need a username and password with access to the [SolarEdge web portal](https://monitoring.solaredge.com/). You also need the site ID, which you can get from the URL once you log in (for example, `1234` from `https://monitoring.solaredge.com/solaredge-web/p/site/1234/`).
+- To set up the integration, you need a username and password with access to the [SolarEdge web portal](https://monitoring.solaredge.com/). 
+- You also need the site ID, which you can get from the URL once you log in (for example, `1234` from `https://monitoring.solaredge.com/solaredge-web/p/site/1234/`).
+
 
 {% include integrations/config_flow.md %}
 
