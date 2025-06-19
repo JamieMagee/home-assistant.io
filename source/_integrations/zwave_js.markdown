@@ -60,10 +60,10 @@ This sections shows you how to set up a Z-Wave JS server and how to add your fir
 
 Throughout this documentation, Home Assistant terminology is used. For some of the concepts, the terminology does not correspond to the terminology used in Z-Wave documentation. The table below provides equivalents for some of those terms.
 
-| Z-Wave functionality | Home Assistant                                         | Definition                                                                                               |
-| -------------------- | ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------- |
-| inclusion            | add                                                    | The process of adding a node to the Z-Wave network                                                       |
-| exclusion            | remove                                                 | The process of removing a node from the Z-Wave network                                                   |
+| Z-Wave functionality | Home Assistant                                         | Definition                                                                                                  |
+| -------------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
+| inclusion            | add                                                    | The process of adding a node to the Z-Wave network                                                          |
+| exclusion            | remove                                                 | The process of removing a node from the Z-Wave network                                                      |
 | replication          | copy (not supported in Home Assistant)                 | The process of copying network information from one antenna to another. Not supported in Home Assistant. |
 | barrier operator     | cover                                                  |
 | window covering      | cover                                                  |
@@ -311,7 +311,7 @@ The following features can be accessed from the integration configuration panel:
 
 - **Add device:** Allows you to pre-provision a SmartStart device or start the inclusion process for adding a new device to your network.
 - **Remove device:** Starts the exclusion process for removing a device from your network.
-- **Rebuild network routes:** Forces your network to rediscover routes to the controller from each device. This is useful when devices or the controller have moved to a new location, or if you are having significant problems with your network, but it also generates a lot of network traffic and should be used sparingly.
+- **Rebuild network routes:** Forces your network to rediscover routes to the antenna from each device. This is useful when devices or the antenna have moved to a new location, or if you are having significant problems with your network, but it also generates a lot of network traffic and should be used sparingly.
 - **[Antenna statistics](https://zwave-js.github.io/node-zwave-js/#/api/controller?id=quotstatistics-updatedquot):** Provides statistics about communication between the antenna and other devices, allowing you to troubleshoot your network's RF quality.
 - **Third-party data opt-in/out:** Allows you to opt-in or out of telemetry that the Z-Wave JS project collects to help inform development decisions, influence manufacturers, etc. This telemetry is disabled by default and has to be opted in to be activated.
 
@@ -854,7 +854,7 @@ In addition to the [standard automation trigger data](/docs/automation/templatin
 | ---------------------- | -------------------------------------------------------------------------------- |
 | `trigger.device_id`    | Device ID for the device in the device registry (only included for node events). |
 | `trigger.node_id`      | Z-Wave node ID (only included for node events).                                  |
-| `trigger.event_source` | Source of event (node, antenna, or driver).                                      |
+| `trigger.event_source` | Source of event (node, antenna, or driver).                                   |
 | `trigger.event`        | Name of event.                                                                   |
 | `trigger.event_data`   | Any data included in the event.                                                  |
 
