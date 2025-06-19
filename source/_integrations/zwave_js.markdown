@@ -63,6 +63,7 @@ Throughout this documentation, Home Assistant terminology is used. For some of t
 | Z-Wave functionality | Home Assistant                                         | Definition                                                                                                  |
 | -------------------- | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------- |
 | inclusion            | add                                                    | The process of adding a node to the Z-Wave network                                                          |
+| controller           | antenna                                                |
 | exclusion            | remove                                                 | The process of removing a node from the Z-Wave network                                                      |
 | replication          | copy (not supported in Home Assistant)                 | The process of copying network information from one antenna to another. Not supported in Home Assistant. |
 | barrier operator     | cover                                                  |
