@@ -1,5 +1,5 @@
 ---
-title: "Z-Wave Controllers"
+title: "Z-Wave antennas"
 description: "Extended instructions how to setup Z-Wave."
 related:
   - docs: /integrations/zwave_js/
@@ -12,7 +12,7 @@ You need to have a compatible Z-Wave stick or module installed. The following de
 
 {% warning %}
 
-The firmwares of 700 and 800 series Z-Wave controllers have several bugs which impact the stability of the mesh and can cause the controller to become unresponsive. Because there is no known firmware version that is completely fixed, it is recommended to choose a firmware based on the following criteria:
+The firmwares of 700 and 800 series Z-Wave antennas have several bugs which impact the stability of the mesh and can cause the antenna to become unresponsive. Because there is no known firmware version that is completely fixed, it is recommended to choose a firmware based on the following criteria:
 
 - 700 series:
   - prefer SDK versions 7.17.2 to 7.18.x or 7.21.6 and newer
@@ -32,7 +32,7 @@ The SDK version does not have to match the firmware version. If you are unsure w
 {% endnote %}
 
 {% important %}
-You should upgrade the firmware on all 700 and 800 series controllers to a recommended version.
+You should upgrade the firmware on all 700 and 800 series antennas to a recommended version.
 {% endimportant %}
 
 Firmware can be upgraded using the below directions:
@@ -44,11 +44,11 @@ Firmware can be upgraded using the below directions:
 
 {% endwarning %}
 
-- 800 series controllers (with some caveats, see notes)
+- 800 series antennas (with some caveats, see notes)
   - HomeSeer SmartStick G8
   - Zooz 800 Series Z-Wave Long Range S2 Stick (ZST39 LR)
 
-- 700 series controllers
+- 700 series antennas
   - Aeotec Z-Stick 7 USB stick (ZWA010) (the EU version is not recommended due to RF performance issues)
   - HomeSeer SmartStick+ G3
   - HomeSeer Z-NET G3
@@ -56,7 +56,7 @@ Firmware can be upgraded using the below directions:
   - Zooz S2 Stick 700 (ZST10 700)
   - Z-Wave.Me Z-Station
 
-- 500 series controllers
+- 500 series antennas
   - Aeotec Z-Stick Gen5 (see note below)
   - Everspring USB stick - Gen 5
   - GoControl HUSBZB-1 stick
@@ -73,7 +73,7 @@ Firmware can be upgraded using the below directions:
   - Z-Wave.Me Razberry 2 (500 series)
   - Z-Wave.Me Razberry 1 (300 series)
 
-If you are just starting out, we recommend that you purchase a 700 series controller or a Raspberry Pi module. The 700 series controllers are the more recent version (when compared to the 500 series). The 700 series controllers support SmartStart, which allows you to add a device by scanning a QR code.
+If you are just starting out, we recommend that you purchase a 700 series antenna or a Raspberry Pi module. The 700 series antennas are the more recent version (when compared to the 500 series). The 700 series antennas support SmartStart, which allows you to add a device by scanning a QR code.
 
 {% tip %}
 It's recommended to use a USB stick, not a module. Passing a module through Docker is more complicated than passing a USB stick through.
@@ -88,7 +88,7 @@ The alternative to a stick is a hub that supports Z-Wave. Home Assistant support
 - [SmartThings](/integrations/smartthings/)
 - [Z-Wave.Me Z-Way](/integrations/zwave_me)
 
-## Controller notes
+## Antenna notes
 
 ### 800 Series Controllers
 
@@ -98,7 +98,7 @@ Z-Wave JS does not support Z-Wave Long Range yet.
 
 {% note %}
 
-The Aeotec Z-Stick and some of its variants (e.g. Z-Wave.Me UZB1) are known to have compatibility issues with the Linux kernel because of their [non-compliant behavior](https://forums.raspberrypi.com/viewtopic.php?f=28&t=245031#p1502030). Plugging these controllers through a USB hub can serve as a workaround that sometimes mitigates the issue.
+The Aeotec Z-Stick and some of its variants (e.g. Z-Wave.Me UZB1) are known to have compatibility issues with the Linux kernel because of their [non-compliant behavior](https://forums.raspberrypi.com/viewtopic.php?f=28&t=245031#p1502030). Plugging these antennas through a USB hub can serve as a workaround that sometimes mitigates the issue.
 
 {% endnote %}
 
