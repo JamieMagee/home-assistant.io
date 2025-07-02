@@ -79,9 +79,9 @@ If you are just starting out, we recommend that you purchase a 700 series adapte
 It's recommended to use a USB stick, not a module. Passing a module through Docker is more complicated than passing a USB stick through.
 {% endtip %}
 
-## Third pary hubs
+## Third-party hubs
 
-For best experience, it is recommended to use an adapter directly with Home Assistant. If this doesn't work for you, you can use a hub that supports Z-Wave. Home Assistant supports the following hubs with Z-Wave support:
+For best experience, it is recommended to use an adapter directly with Home Assistant. If this doesn't work for you, you can use a hub that supports Z-Wave. Home Assistant supports the following third-party hubs with Z-Wave support:
 
 - [Vera](/integrations/vera/)
 - [Fibaro](/integrations/fibaro/)
