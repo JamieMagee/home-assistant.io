@@ -44,11 +44,11 @@ Firmware can be upgraded using the below directions:
 
 {% endwarning %}
 
-- 800 series adapters (with some caveats, see notes)
+- 800 series USB adapters (with some caveats, see notes)
   - HomeSeer SmartStick G8
   - Zooz 800 Series Z-Wave Long Range S2 Stick (ZST39 LR)
 
-- 700 series adapters
+- 700 series USB adapters
   - Aeotec Z-Stick 7 USB stick (ZWA010) (the EU version is not recommended due to RF performance issues)
   - HomeSeer SmartStick+ G3
   - HomeSeer Z-NET G3
@@ -56,7 +56,7 @@ Firmware can be upgraded using the below directions:
   - Zooz S2 Stick 700 (ZST10 700)
   - Z-Wave.Me Z-Station
 
-- 500 series adapters
+- 500 series USB adapters
   - Aeotec Z-Stick Gen5 (see note below)
   - Everspring USB stick - Gen 5
   - GoControl HUSBZB-1 stick
