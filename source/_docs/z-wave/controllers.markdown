@@ -1,6 +1,6 @@
 ---
 title: "Z-Wave adapters"
-description: "Extended instructions how to setup Z-Wave."
+description: "Extended instructions how to set up Z-Wave."
 related:
   - docs: /integrations/zwave_js/
     title: Z-Wave integration
@@ -12,7 +12,7 @@ You need to have a compatible Z-Wave adapter installed. The following devices ha
 
 {% warning %}
 
-The firmwares of 700 and 800 series Z-Wave adapters have several bugs which impact the stability of the mesh and can cause the adapter to become unresponsive. Because there is no known firmware version that is completely fixed, it is recommended to choose a firmware based on the following criteria:
+The firmware of 700 and 800 series Z-Wave adapters have several bugs which impact the stability of the mesh and can cause the adapter to become unresponsive. Because there is no known firmware version that is completely fixed, it is recommended to choose a firmware based on the following criteria:
 
 - 700 series:
   - prefer SDK versions 7.17.2 to 7.18.x or 7.21.6 and newer
