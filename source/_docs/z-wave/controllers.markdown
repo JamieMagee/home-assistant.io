@@ -90,10 +90,6 @@ For best experience, it is recommended to use an adapter directly with Home Assi
 
 ## Adapter notes
 
-### 800 Series Adapters
-
-Z-Wave JS does not support Z-Wave Long Range yet.
-
 ### Aeotec Z-Stick
 
 {% note %}
