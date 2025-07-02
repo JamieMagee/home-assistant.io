@@ -66,7 +66,7 @@ Firmware can be upgraded using the below directions:
   - HomeSeer SmartStick+ G2
   - HomeSeer Z-NET G2
 
-- Raspberry Pi modules
+- Raspberry Pi hat adapters
   - Aeotec Z-Pi 7 Raspberry Pi HAT/Shield (ZWA025, 700 series)
   - Z-Wave.Me RaZberry 7 (ZME_RAZBERRY7, 700 series)
   - Z-Wave.Me RaZberry 7 Pro (ZMEERAZBERRY7_PRO or ZMEURAZBERRY7_PRO, 700 series)
