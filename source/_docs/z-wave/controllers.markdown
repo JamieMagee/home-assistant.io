@@ -73,8 +73,7 @@ Firmware can be upgraded using the below directions:
   - Z-Wave.Me Razberry 2 (500 series)
   - Z-Wave.Me Razberry 1 (300 series)
 
-If you are just starting out, we recommend that you purchase a 800-series controller (with firmware updated to >=7.23.2). The 800-series adapters are the most future proof and have the best RF performance.
-
+If you are just starting out, we recommend that you purchase an 800-series adapter (with firmware updated to ≥ 7.23.2). The 800-series adapters are the most future-proof and offer the best RF performance.
 {% tip %}
 It's recommended to use a USB stick, not a module. Passing a module through Docker is more complicated than passing a USB stick through.
 {% endtip %}
