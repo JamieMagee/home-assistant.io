@@ -172,7 +172,7 @@ Do this before using the device with another adapter, or when you don't use the 
 
 ## Migrating a Z-Wave network to a new adapter
 
-Do this if you have an existing Z-Wave network and want to use a new adapter. This will reset your current adapter (remove all network information from it) and remove the adapter from Home Assistant. The Z-Wave integration with all its entities will stay in Home Assistant. The new adapter is added to Home Assistant and paired with the existing network.
+Do this if you have an existing Z-Wave network and want to replace its adapter with a new adapter. The Z-Wave integration with all its entities will stay in Home Assistant. The new adapter is added to Home Assistant and paired with the existing network.
 
 ### Prerequisites
 
@@ -189,8 +189,8 @@ Do this if you have an existing Z-Wave network and want to use a new adapter. Th
 3. Under **Backup and restore**, select **Migrate adapter**.
 4. Select **Migrate to a new adapter**.
 
-   - To confirm device reset, select **Submit**.
-   - **Info**: This will initiate a backup of the network information. All the stored network information will be removed.
+   - To confirm, select **Submit**.
+   - **Info**: This will initiate a backup of the network information.
 5. When the **Unplug your adapter** dialog shows up, unplug your old adapter.
    - Connect the new adapter.
    - Confirm that you connected the new adapter by selecting **Submit**.
