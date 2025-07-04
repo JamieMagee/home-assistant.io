@@ -31,7 +31,7 @@ Data points:
 Attribute:
   description: Attribute from the source to monitor/compensate. When omitted, the state value of the source will be used.
 Degree:
-  description: "The degree of a polynomial. For example, Linear compensation (y = x + 3) has 1 degree, Quadratic compensation (y = x<sup>2</sup> + x + 3) has 2 degrees, etc."
+  description: "The degree of a polynomial. For example, Linear compensation (y = x + 3) has 1 degree, Quadratic compensation (y = x<sup>2</sup> + x + 3) has 2 degrees, and so on."
 Precision:
   description: Defines the number of decimal places of the calculated sensor value.
 Unit of measurement:
