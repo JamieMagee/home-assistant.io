@@ -38,6 +38,7 @@ To setup a HDDTemp to your installation, add the following to your {% term "`con
 # Example configuration.yaml entry
 sensor:
   - platform: hddtemp
+    host: 192.168.1.2
     disks:
       - /dev/sda1
 ```
@@ -50,8 +51,7 @@ name:
   type: string
 host:
   description: Host where `hddtemp` is running.
-  required: false
-  default: localhost
+  required: true
   type: string
 port:
   description: Port that is used by `hddtemp`.
