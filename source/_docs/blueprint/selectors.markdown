@@ -1417,6 +1417,10 @@ entity_id:
   description: The entity ID of which an state can be selected from.
   type: string
   required: true
+hide_states:
+  description: The states to exclude from the list of options
+  type: list
+  required: false
 {% endconfiguration %}
 
 The output of this selector is the select state (not the translated or
