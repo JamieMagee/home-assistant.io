@@ -1416,7 +1416,7 @@ one can be selected.
 entity_id:
   description: The entity ID of which an state can be selected from.
   type: string
-  required: true
+  required: false
 hide_states:
   description: The states to exclude from the list of options
   type: list
