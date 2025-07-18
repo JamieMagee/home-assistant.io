@@ -723,7 +723,7 @@ multiple:
   required: false
 reorder:
   description: >
-    Allows to reorder entities (in case `multiple` is set to `true`).
+    Allows reordering of entities (only applies if `multiple` is set to `true`).
   type: boolean
   default: false
   required: false
