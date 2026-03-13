@@ -15,9 +15,9 @@ related:
     title: Home dashboard
 ---
 
-An area in Home Assistant is a logical grouping of {% term devices %} and {% term entities %} that are meant to match areas (or rooms) in the physical world of your home.
+An area in Home Assistant is a logical grouping of {% term devices %} and {% term entities %} that are meant to match areas (or rooms) in the physical world of your home. Areas allow you to target an entire group of devices with an action.
 
-For example, the "Living room" area groups devices and entities in your living room. Areas allow you to target an entire group of devices with an action. For example, turning off all the lights in the living room.
+For example, the "Living room" area groups devices and entities in your living room. This allows you to turn off all the lights in the living room with a single action.
 Areas can be assigned to {% term floors %}. Areas can also be used to automatically generate cards, such as the [Area card](/dashboards/area/).
 
 ## Creating an area
@@ -27,27 +27,27 @@ Follow these steps to create a new area from the **Areas** view.
 1. Go to {% my areas title="**Settings** > **Areas, labels & zones**" %} and select **Create area**.
 2. In the dialog, enter the area details:
    - Give the area a **Name** (required).
-   - Add an icon (We use [Material icons](https://pictogrammers.com/library/mdi/)).
+   - Add an icon (use [Material Design Icons (MDI)](https://pictogrammers.com/library/mdi/)).
    - Assign the area to a floor.
      - If you have not created floors yet, you can [create a new floor](/docs/organizing/floors/#creating-a-floor).
-     - The number can be negative. For example for underground floors.
+     - The number can be negative. For example, for underground floors.
      - This number can later be used for sorting.
    - Add an image representing that area.
    - Add an **Alias**.
      - Aliases are alternative names used in [voice assistants](/voice_control/aliases/) to refer to an area, entity, or floor.
 
     ![Create area dialog](/images/organizing/create_area_01.png)
-3. Select **Add**.
+3. Select **Create**.
 
    **Result**: A new area is created.
 
-## Assigning areas to floors and add labels
+## Assigning areas to floors and adding labels
 
 If an area has not yet been assigned to a {% term floor %}, it is shown in the **Unassigned areas** section. Follow these steps to assign an area to a floor.
 
-1. Go to {% my areas title="**Settings** > **Areas, labels & zones**" %} and select **Create area**.
-2. On the area card, select the edit {% icon "mdi:edit" %} button.
-3. In the dialog, select the {% term floor %} and add {% term labels %} if you like.
+1. Go to {% my areas title="**Settings** > **Areas, labels & zones**" %}.
+2. Drag and drop the area card to the target floor.
+   - Alternatively, on the area card, select the edit {% icon "mdi:edit" %} button and assign the {% term floor %} and {% term labels %}.
 
 ## Assigning an area to multiple items
 
