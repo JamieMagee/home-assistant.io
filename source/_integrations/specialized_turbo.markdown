@@ -21,7 +21,7 @@ related:
     title: Bluetooth
 ---
 
-The **Specialized Turbo** {% term integration %} connects Home Assistant to [Specialized](https://www.specialized.com/) Turbo e-bikes over {% term Bluetooth %} Low Energy. It reads real-time telemetry straight from the bike — battery level, speed, power output, cadence, motor temperature, odometer, and more — giving you the same data the Specialized Mission Control app sees.
+The **Specialized Turbo** {% term integration %} connects Home Assistant to [Specialized](https://www.specialized.com/) Turbo e-bikes over Bluetooth Low Energy. It reads real-time telemetry straight from the bike — battery level, speed, power output, cadence, motor temperature, odometer, and more — giving you the same data the Specialized Mission Control app sees.
 
 If you ride a Specialized Turbo Vado, Levo, Creo, Como, or Tero, you can track battery health over time, log rides through Home Assistant's history, or build automations that fire when your bike finishes charging.
 
