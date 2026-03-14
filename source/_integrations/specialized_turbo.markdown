@@ -57,7 +57,7 @@ The bike is usually discovered automatically. If it doesn't appear, make sure it
 
 {% configuration_basic %}
 Pairing PIN:
-    description: "The PIN displayed on the bike's TCU screen during Bluetooth pairing. Leave empty if your bike does not require a PIN."
+  description: "The PIN displayed on the bike's TCU screen during Bluetooth pairing. Leave empty if your bike does not require a PIN."
 {% endconfiguration_basic %}
 
 ## Supported functionality
@@ -152,6 +152,7 @@ The **Specialized Turbo** integration provides the following sensor entities.
 
 ### Warn when battery health drops
 
+{% raw %}
 ```yaml
 - alias: "Bike battery health warning"
   triggers:
@@ -168,6 +169,7 @@ The **Specialized Turbo** integration provides the following sensor entities.
           ) }}%.
           Consider scheduling a service.
 ```
+{% endraw %}
 
 ## Data updates
 
@@ -188,7 +190,7 @@ The integration uses a push-based approach. It connects to the bike over Bluetoo
 If your bike doesn't appear during setup:
 
 1. Make sure the bike is powered on and awake — pedal briefly or press the power button so the TCU screen lights up.
-2. Check that your Bluetooth adapter is working under {% my integrations title="**Settings** > **Devices & services**" %} > **Bluetooth**.
+2. Check that your Bluetooth adapter is working in {% my integrations title="**Settings** > **Devices & services**" %}.
 3. If you're using an ESPHome Bluetooth proxy, confirm that `active: true` is set in the proxy's configuration.
 4. Move the bike closer to the Bluetooth adapter. BLE range is typically 5–10 meters, less through walls.
 
