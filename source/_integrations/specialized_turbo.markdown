@@ -27,7 +27,7 @@ If you ride a Specialized Turbo Vado, Levo, Creo, Como, or Tero, you can track b
 
 ## Supported devices
 
-This integration works with Specialized Turbo e-bikes that have the Gen 2 BLE module (the "TURBOHMI2017" protocol), which includes most 2017 and newer models with a <abbr title="Turbo Connect Unit">TCU</abbr> display:
+This integration works with Specialized Turbo e-bikes that have the Gen 2 BLE module (the TURBOHMI2017 protocol), which includes most 2017 and newer models with a <abbr title="Turbo Connect Unit">TCU</abbr> display:
 
 - Turbo Vado (all SL and full-power variants)
 - Turbo Levo (all SL and full-power variants)
@@ -35,7 +35,7 @@ This integration works with Specialized Turbo e-bikes that have the Gen 2 BLE mo
 - Turbo Como (SL and full-power)
 - Turbo Tero
 
-If your bike broadcasts a "TURBOHMI" Bluetooth advertisement when powered on, it should work.
+If your bike broadcasts a TURBOHMI Bluetooth advertisement when powered on, it should work.
 
 ## Unsupported devices
 
@@ -69,7 +69,7 @@ The **Specialized Turbo** integration provides the following sensor entities.
 #### Sensors
 
 - **Battery**
-  - **Description**: Current battery charge level, in percent.
+  - **Description**: Current battery charge level, as a percentage.
 
 - **Battery capacity**
   - **Description**: Total battery capacity in watt-hours.
@@ -153,6 +153,7 @@ The **Specialized Turbo** integration provides the following sensor entities.
 ### Warn when battery health drops
 
 {% raw %}
+
 ```yaml
 - alias: "Bike battery health warning"
   triggers:
@@ -169,6 +170,7 @@ The **Specialized Turbo** integration provides the following sensor entities.
           ) }}%.
           Consider scheduling a service.
 ```
+
 {% endraw %}
 
 ## Data updates
@@ -187,26 +189,58 @@ The integration uses a push-based approach. It connects to the bike over Bluetoo
 
 ### Bike not discovered
 
-If your bike doesn't appear during setup:
+#### Symptom: The bike doesn't appear during setup
 
-1. Make sure the bike is powered on and awake — pedal briefly or press the power button so the TCU screen lights up.
+When you try to add the integration, your bike is not listed as a discovered device.
+
+#### Description
+
+The bike may be asleep, out of Bluetooth range, or the Bluetooth adapter in Home Assistant may not be picking up its advertisement.
+
+#### Resolution
+
+To resolve this issue, try the following steps:
+
+1. Make sure the bike is powered on and awake. Pedal briefly or press the power button so the TCU screen lights up.
 2. Check that your Bluetooth adapter is working in {% my integrations title="**Settings** > **Devices & services**" %}.
 3. If you're using an ESPHome Bluetooth proxy, confirm that `active: true` is set in the proxy's configuration.
 4. Move the bike closer to the Bluetooth adapter. BLE range is typically 5–10 meters, less through walls.
 
 ### Sensors show "Unavailable"
 
-This usually means the bike is out of range or asleep:
+#### Symptom: All sensors show "Unavailable"
+
+After the integration is set up, one or more sensor entities show **Unavailable** instead of a value.
+
+#### Description
+
+This happens when the Bluetooth connection to the bike has dropped. The most common causes are the bike going to sleep, being out of range, or another app holding the Bluetooth connection.
+
+#### Resolution
+
+To resolve this issue, try the following steps:
 
 1. Wake the bike by pedaling or pressing the power button.
-2. Check whether the Specialized Mission Control app (or another BLE client) has an active connection — only one client can connect at a time.
+2. Check whether the Specialized Mission Control app (or another BLE client) has an active connection. Only one client can connect at a time.
 3. Try restarting the integration from {% my integrations title="**Settings** > **Devices & services**" %}.
 
 ### Pairing PIN not accepted
 
-The PIN is displayed on the bike's TCU screen when it enters pairing mode. If you don't see a PIN prompt on the bike, it may already be paired with another device. Reset the BLE pairing on the bike and try again.
+#### Symptom: The pairing PIN is rejected during setup
 
-Some Bluetooth backends don't support programmatic PIN entry. If that happens, pair the bike through your operating system's Bluetooth settings first, then set up the integration without entering a PIN.
+When you enter the PIN shown on the bike's TCU screen, the integration rejects it or pairing fails.
+
+#### Description
+
+The bike may already be paired with another device, or your Bluetooth backend may not support programmatic PIN entry.
+
+#### Resolution
+
+To resolve this issue, try the following steps:
+
+1. On the bike's TCU, reset the BLE pairing and try setting up the integration again.
+2. If you don't see a PIN prompt on the bike's screen, it may still be paired with another device. Clear old pairings first.
+3. If the PIN is still not accepted, pair the bike through your operating system's Bluetooth settings first, then set up the integration without entering a PIN.
 
 ## Removing the integration
 
