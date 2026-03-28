@@ -47,7 +47,7 @@ If your bike broadcasts a TURBOHMI Bluetooth advertisement when powered on, it s
 
 Before setting up this integration, make sure:
 
-1. Your bike is powered on and awake (pedal or press the power button — the TCU screen should be lit).
+1. Your bike is powered on and awake. If it isn't, pedal or press the power button. The TCU screen should be lit.
 2. Home Assistant has access to a [Bluetooth adapter](/integrations/bluetooth/). If the bike is out of range, you can use an [ESPHome Bluetooth proxy](https://esphome.io/projects/?type=bluetooth) placed in your garage or shed.
 3. No other app (like Specialized Mission Control) is actively connected to the bike over Bluetooth. Only one BLE client can connect at a time.
 
@@ -206,11 +206,11 @@ To resolve this issue, try the following steps:
 3. If you're using an ESPHome Bluetooth proxy, confirm that `active: true` is set in the proxy's configuration.
 4. Move the bike closer to the Bluetooth adapter. BLE range is typically 5–10 meters, less through walls.
 
-### Sensors show "Unavailable"
+### Can't see the values of sensor entities
 
 #### Symptom: All sensors show "Unavailable"
 
-After the integration is set up, one or more sensor entities show **Unavailable** instead of a value.
+After the integration is set up, all sensor entities show **Unavailable** instead of a value.
 
 #### Description
 
